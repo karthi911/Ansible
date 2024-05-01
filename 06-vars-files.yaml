@@ -7,4 +7,4 @@
      ansible.builtin.debug:
        msg: "hi im taking Course in {{Course}}.
             with duration of {{Duration}},
-            in {{Class}} class by trainer {{trainer}}."
+            in {{Class}} class by trainer {{Trainer}}."
