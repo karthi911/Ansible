@@ -5,7 +5,7 @@
      Con: "tools"
      fee: "30k"
    tasks: 
-    - name: print override variables
+    - name: print override information
       vars:  # Task level variable that means it overides and give the priority to task level first after other.
         course: "Intellipath"
         con: "tools"
