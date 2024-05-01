@@ -1,0 +1,15 @@
+- name: prompting the credentials by using variables
+  hosts: localhost
+  vars_prompt:
+   - name: USERNAME
+     prompt: Enter your user name
+     private: false
+   - name: PASSWORD
+     prompt: Enter your password
+     private: true
+  tasks:
+  - name: Giving credentials
+    ansible.builtin.debug:    
+       msg: "Hi my username is {{UUSERNAME}}, 
+               password is {{PASSWORD}}"
+
