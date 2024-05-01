@@ -10,6 +10,6 @@
   tasks:
   - name: Giving credentials
     ansible.builtin.debug:    
-       msg: "Hi my username is {{UUSERNAME}}, 
+       msg: "Hi my username is {{USERNAME}}, 
                password is {{PASSWORD}}"
 
