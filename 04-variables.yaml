@@ -18,4 +18,4 @@
   tasks:  
     - name: print the values
       ansible.builtin.debug:
-         msg: "if {{A}} is added to {{B}} and what is the whole value of {{Addition}}"
+         msg: "if {{A}} is added to {{B}} and what is the whole value is {{Addition}}"
