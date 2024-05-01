@@ -2,13 +2,13 @@
    hosts: localhost
    vars:  
      course: join Devops
-     Content: Devops
+     Content: tools
      fee: 30k
    tasks: 
     - name: print override variables
       vars:  # Task level variable that means it overides and give the priority to task level first after other.
         course: Intellipath
-        fee: 80k
+        fee: 30k
       ansible.builtin.debug: 
          msg: "Hi we are learning course in {{course}} platform with main content {{content}} and the payment fee is {{fee}}"
     
