@@ -1,6 +1,6 @@
 - name: prompting the credentials by using variables
   hosts: localhost
-  vars_prompt:
+  vars_prompt:  # declare thr vars_prompt as vars: and doing the prompt as follows
    - name: USERNAME
      prompt: Enter your user name
      private: false
