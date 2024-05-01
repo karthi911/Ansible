@@ -10,9 +10,9 @@
         course: Intellipath
         fee: 30k
       ansible.builtin.debug: 
-         msg: "Hi we are learning course in {{course}} platform with main content {{content}} and the payment fee is {{fee}}"
+         msg: "Hi we are learning course in {{course}} platform with main content {{content}}, and the payment fee is {{fee}}."
     
     - name: print information
       ansible.builtin.debug: 
-         msg: "Hi we are learning course in {{course}} platform with main content {{content}} and the payment fee is {{fee}}"
+         msg: "Hi we are learning course in {{course}} platform with main content {{content}}, and the payment fee is {{fee}}."
     
