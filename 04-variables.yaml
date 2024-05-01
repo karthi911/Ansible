@@ -14,8 +14,8 @@
   vars: 
     A: 10
     B: 60
-
+    Addition: 70
   tasks:  
     - name: print the values
       ansible.builtin.debug:
-         msg: "if {{A}} is added to {{B}} and what is the whole value"
+         msg: "if {{A}} is added to {{B}} and what is the whole value of {{Addition}}"
