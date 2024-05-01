@@ -1,18 +1,18 @@
  - name: task level preference variables
    hosts: localhost
    vars:  
-     course: "join Devops"
+     Course: "join Devops"
      Con: "tools"
-     fee: "30k"
+     Fee: "30k"
    tasks: 
     - name: print override information
       vars:  # Task level variable that means it overides and give the priority to task level first after other.
-        course: "Intellipath"
-        con: "tools"
+        Course: "Intellipath"
+        Con: "Devops"
       ansible.builtin.debug: 
-         msg: "Hi we are learning course in {{course}} platform with main content {{con}}, and the payment fee is {{fee}}."
+         msg: "Hi we are learning course in {{Course}} platform with main content {{Con}}, and the payment fee is {{Fee}}."
     
     - name: print information
       ansible.builtin.debug: 
-         msg: "Hi we are learning course in {{course}} platform with main content {{con}}, and the payment fee is {{fee}}."
+         msg: "Hi we are learning course in {{Course}} platform with main content {{Con}}, and the payment fee is {{Fee}}."
     
