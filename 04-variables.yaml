@@ -7,14 +7,14 @@
   tasks: 
     - name: print information about training
       ansible.builtin.debug:
-       msg: "im taking training from {{course}} and the price is {{price}} for only{{language}}"
+       msg: "im taking training from {{course}} and the price is {{price}} for only {{language}}"
 
 - name: variables in numbers
   hosts: localhost
   vars: 
     A: 10
     B: 60
-    c : 70
+    c : A+B
   tasks:  
     - name: print the values
       ansible.builtin.debug:
