@@ -1,0 +1,10 @@
+- name: collecting variables from seperate files
+  hosts: localhost
+  vars_files:  # declaring vars_files as key value and fetch variables from other created file.
+  - variables.yaml
+  tasks:
+   - name: collecting variables from other files
+     ansible.builtin.debug:
+       msg: "hi im taking Course in {{Course}}.
+            with duration of {{Duration}},
+            in {{Class}} class by trainer {{trainer}}."
