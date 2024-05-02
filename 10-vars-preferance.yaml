@@ -17,4 +17,4 @@
   tasks:
 - name: checking the preference of variable
   ansible.builtin.debug:  
-    msg: "Hello, Good {{WISHES}} have a nice {{DAY}}".
+    msg: " Hello, Good {{WISHES}} have a nice {{DAY}}"
