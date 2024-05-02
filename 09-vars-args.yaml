@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:  
     - name: get from arguments with passing prompt
-      ansible.builtin.module:
+      ansible.builtin.debug:
         msg: " hello myself {{person}}, how are you doing {{do}}" 
