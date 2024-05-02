@@ -1,0 +1,20 @@
+- name: variable preferances from all variables
+  hosts: localhost
+  vars:
+    WISHES: "morning from play variable"
+    DAY: "Friday from play variable"
+
+  vars_files:
+  - variables.yaml
+  vars_prompt:
+  - name: WISHES
+    prompt: Enter WISHES variable
+    private: false
+  - name: DAY
+    prompt: Enter Day variable
+    private: false
+
+  tasks:
+- name: checking the preference of variable
+  ansible.builtin.debug:  
+    msg: "Hello, Good {{WISHES}} have a nice {{DAY}}".
