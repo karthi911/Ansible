@@ -1,8 +1,8 @@
 - name: variable preferances from all variables
   hosts: localhost
-  vars:
-    WISHES: "morning from play variable"
-    DAY: "Friday from play variable"
+  # vars:
+  #   WISHES: "morning from play variable"
+  #   DAY: "Friday from play variable"
 
   vars_files:
   - variables.yaml
