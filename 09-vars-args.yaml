@@ -1,0 +1,6 @@
+- name: variables from arguments
+  hosts: localhost
+  tasks:  
+    - name: get from arguments with passing prompt
+      ansible.builtin.module:
+        msg: " hello myself {{person}}, how are you doing {{do}}" 
