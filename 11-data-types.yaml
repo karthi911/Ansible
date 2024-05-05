@@ -1,21 +1,21 @@
 - name: data Types
   hosts: localhost
   vars:
-   course: "Devops with aws" # string data type
+   Course: "Devops with aws" # string data type
    Tools: # List
    - Linux
    - Ansible
-   - shell
+   - Shell
    Experience: # Map ot Dictionary
      Devops:3
-     aws:2
-     azure:1
-   Real Project: true # Boolean data type
+     Aws:2
+     Azure:1
+   RealProject: true # Boolean data type
   tasks:
    - name: print the All data Types
      ansible.builtin.debug:
-      msg: " Course: {{course}}, Tools covered {{Tools}}, Experience is: {{Experience}}, 
-               is rreal project {{Real Project}}."
+      msg: " Course: {{Course}}, Tools covered {{Tools}}, Experience is: {{Experience}}, 
+               is rreal project {{RealProject}}."
 
 
     
