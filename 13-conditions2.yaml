@@ -14,4 +14,4 @@
    - name: number is greater than or equal to 20
      ansible.builtin.debug:
        msg: "number is greater than or equal 20"
-       when: number | int > = 20
+       when: number | int >= 20
