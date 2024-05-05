@@ -21,3 +21,11 @@
        #DAY: "  from FriDay variable"
     ansible.builtin.debug:  
       msg: " Hello, Good {{WISHES}} have a nice {{DAY}}"
+
+
+    # 1. arguments
+    # 2. Task level
+    # 3. Variable Files
+    # 4.prompt
+    # 5.play level
+    # 6. inventory
