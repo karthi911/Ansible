@@ -40,14 +40,17 @@
 - name: convert list to dictionary
   hosts: localhost
   vars: 
-   vegies:
-    -brinjal
-    -tomato
-    -onions
+    fruits:
+     - fruit: apple
+       color: red
+     - fruit: pear
+       color: yellow
+     - fruit: grapefruit
+       color: yellow
   tasks:  
    - name: change list of items into a dictionary
      ansible.builtin.debug:
-       msg: " list of veggies is {{vegies | items2dict }}"
+       msg: " list of fruitss are {{fruits | items2dict }}"
    
     
 
