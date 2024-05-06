@@ -64,7 +64,7 @@
   tasks: 
     - name: Display my movies into list format
       ansible.builtin.debug:
-        msg: " my movies are {{my_movies | dict2items}}"
+        msg: " my movies are {{My_movies | dict2items}}"
 
     
 
