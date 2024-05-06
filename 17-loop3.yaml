@@ -1,0 +1,14 @@
+- name: install packages
+  hosts: web
+  become: yes
+  tasks:  
+   - name: install all packages
+     ansible.builtin.dnf:
+       name: "{{ item }}"
+       state: latest
+       #msg: "Installed all required packages"
+     loop:  
+      - { name: 'mysql', state: 'latest' } # items style installation
+      - { name: 'nginx',  state: 'absent' }
+      - { name: 'postfix', state: 'absent' }
+      
