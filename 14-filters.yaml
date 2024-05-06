@@ -51,7 +51,21 @@
    - name: change list of items into a dictionary
      ansible.builtin.debug:
        msg: " list of fruitss are {{fruits | items2dict }}"
-   
+
+- name: converts dictonary to lists
+  hosts: localhost
+  vars:
+   My_movies:
+    Dj Tillu: Sidhu
+    Salar: Prabhas
+    RRR: Ram and NTR
+    Pushpa: Allu Arjun
+
+  tasks: 
+    - name: Display my movies into list format
+      ansible.builtin.debug:
+        msg: " my movies are {{my_movies | dict2items}}"
+            
     
 
 
