@@ -41,9 +41,9 @@
   hosts: localhost
   vars: 
    vegies:
-    - brinjal
-    - tomato
-    - onions
+    -brinjal
+    -tomato
+    -onions
   tasks:  
    - name: change list of items into a dictionary
      ansible.builtin.debug:
