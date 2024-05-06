@@ -1,0 +1,55 @@
+- name: default value
+  hosts: localhost
+  tasks:
+    - name: print default value
+      ansible.builtin.debug:
+         msg: "Hello {{Course | Default('Devops') }}"
+
+- name: upper case
+  hosts: localhost
+  vars: 
+    greet: Hey Balu are you man
+      
+  tasks:
+   - name: print upper case
+     ansible.builtin.debug:
+        msg: "Hello {{greet | upper }}"
+
+- name: Remove Duplicates
+  hosts: localhost
+  vars:
+   Num: [1,2,7,5,2,8,7,4]
+  tasks:
+    - name: remove duplicates
+      ansible.builtin.debug:
+        msg: " the Duplicates are: {{num | unique }}"
+
+- name: Print min and max values
+  hosts: localhost
+  vars: 
+    height: [5,6,7,3,4,8] 
+  tasks:
+    - name: print minimum height
+      ansible.builtin.debug:
+        msg: " minimum height: {{height | min }}"
+        
+    - name: print maximum height
+      ansible.builtin.debug:
+        msg: " maximum height: {{height | max }}"  
+
+- name: convert list to dictionary
+  hosts: localhost
+  vars: 
+   vegies:
+    - brinjal
+    - tomato
+    - onions
+  tasks:  
+   - name: change list of items into a dictionary
+     ansible.builtin.debug:
+       msg: " list of veggies is {{vegies | items2dict }}"
+   
+    
+
+
+
