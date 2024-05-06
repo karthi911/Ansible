@@ -22,7 +22,7 @@
   tasks:
     - name: remove duplicates
       ansible.builtin.debug:
-        msg: " the Duplicates are: {{num | unique }}"
+        msg: " the Duplicates are: {{Num | unique }}"
 
 - name: Print min and max values
   hosts: localhost
