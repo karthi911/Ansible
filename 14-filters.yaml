@@ -3,7 +3,7 @@
   tasks:
     - name: print default value
       ansible.builtin.debug:
-         msg: "Hello {{Course | Default('Devops') }}"
+         msg: "Hello {{ Dit | Default('Devops') }}"
 
 - name: upper case
   hosts: localhost
