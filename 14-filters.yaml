@@ -50,7 +50,7 @@
   tasks:  
    - name: change list of items into a dictionary
      ansible.builtin.debug:
-       msg: " list of fruitss are {{fruits | items2dict }}"
+       msg: " list of fruits are {{fruits | items2dict (key_name='fruit', value_name='color') }}"
 
 - name: converts dictonary to lists
   hosts: localhost
@@ -65,7 +65,7 @@
     - name: Display my movies into list format
       ansible.builtin.debug:
         msg: " my movies are {{my_movies | dict2items}}"
-            
+
     
 
 
